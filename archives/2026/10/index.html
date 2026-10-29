@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>海鸥桌面 — 车机多窗口桌面</title>
+  <meta name="description" content="海鸥桌面（SeagullLauncher）—— 安卓车机桌面启动器：高德画中画、导航信息卡、悬浮球自愈">
+  <link rel="stylesheet" href="/css/style.css">
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+  <nav class="topnav">
+    <a class="brand" href="/">海鸥桌面</a>
+    <div class="links">
+      <a href="/#shots">截图</a>
+      <a href="/#features">功能</a>
+      <a href="/download/">下载</a>
+      <a href="/about/">关于</a>
+    </div>
+  </nav>
+  <main class="wrap">
+    <section class="hero">
+  <h1>海鸥桌面</h1>
+  <p class="tagline">多窗口车机桌面 —— 画中画导航、桌面信息卡、杀后台自愈。</p>
+  <p class="sub">对标海鸥桌面（v1.7.3）的功能结构，去掉账号、会员与云端，做成一个装上就能用的普通桌面。不需要 root 即可安装使用；root、无障碍、截屏授权是可选增强层，缺失时自动隐藏对应入口，绝不因此崩溃。</p>
+  <p class="cta">
+    <a class="btn primary" target="_blank" rel="noopener" href="https://github.com/canfunan/seagull-desktop/releases/latest/download/SeagullLauncher.apk">下载 Android 版</a>
+    <a class="btn ghost" href="/download/">查看安装说明</a>
+  </p>
+</section>
+
+<section id="shots">
+  <h2>真机一览</h2>
+  <figure>
+    <img src="/images/shot-pip.jpg" alt="导航与音乐双画中画 + 顶部导航卡" loading="lazy">
+    <figcaption>左边导航、右边音乐，两块画中画同时挂载，顶部是实时同步的导航信息卡</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/shot-wallpaper.jpg" alt="动态壁纸页：时钟、车速海拔与导航画中画卡片" loading="lazy">
+    <figcaption>壁纸页：大时钟、农历、车速 / 海拔 / 方位，右下角常驻导航画中画小窗</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/shot-amap.jpg" alt="高德地图整屏挂载" loading="lazy">
+    <figcaption>高德地图整屏搬进画中画，常驻 Dock 与系统状态一目了然</figcaption>
+  </figure>
+  <figure>
+    <img src="/images/shot-music.jpg" alt="车机音乐播放页" loading="lazy">
+    <figcaption>音乐全屏播放，Dock 常驻、随时一键回桌面</figcaption>
+  </figure>
+</section>
+
+<section id="features">
+  <h2>为驾驶而设计</h2>
+  <p>开车时真正要看的只有几样：路怎么走、歌是什么、几点了。海鸥桌面把这些钉在同一块屏幕上，其余的都收进抽屉。它参考 vivo 智能车载 CarLauncher 的交互结构，围绕「驾驶时看什么、点什么最少」设计。</p>
+
+  <h3>画中画与多窗口</h3>
+  <p>两档窗口能力：<strong>L2 系统画中画</strong>走标准 PiP API，无 root 可用；<strong>L3 虚拟屏</strong>通过 MediaProjection 建私有虚拟屏，用 root 把任意第三方应用搬上去，再注入触摸事件——高德、百度、网易云都能进画中画，横竖屏语义自动修正。</p>
+
+  <h3>导航信息卡</h3>
+  <p>直接读取高德导航状态，转向箭头、剩余距离、预计到达实时上桌面卡片，与车机屏同步。支持「回家 / 公司」一键起导航，起完自动落进画中画。</p>
+
+  <h3>杀后台自愈</h3>
+  <p>后台被一键清理，回桌面自动拉活目标应用并重搬画中画；悬浮球长按还有手动自愈菜单——自愈全部 / 自愈画中画一 / 自愈画中画二，指哪打哪。</p>
+
+  <h3>桌面随你摆</h3>
+  <p>14 套主题、日夜切换、全局字号；Dock 栏、快捷栏、菜园（常用联系人/应用）三种摆法；动态壁纸、海鸥岛、文件夹、拼音搜索、小白点悬浮球，桌面每个角落都可配置。</p>
+
+  <h3>天气与歌词</h3>
+  <p>Open-Meteo 公开接口的天气卡片；歌词走媒体会话三来源匹配，底栏音乐条随时显示正在播放什么，还能控制上一首 / 暂停。</p>
+
+  <h3>系统增强层（可选）</h3>
+  <p>root 在位时解锁：触摸跨屏转发、任务窗口搬运、亮度音量、Wi-Fi / 蓝牙 / 飞行模式、强停与清缓存、CPU / 温度 / 内存读数、OBD-II 车况引擎。没有 root，这些入口自动隐藏，不影响其它功能。</p>
+</section>
+
+<section id="principles">
+  <h2>设计原则</h2>
+  <ul class="plain">
+    <li><strong>公开优先</strong> —— 核心功能只用标准公开 API；特权能力做成「有则增强，无则隐藏」。</li>
+    <li><strong>无账号</strong> —— 不登录、不会员、不上云；备份与恢复只走本地文件。</li>
+    <li><strong>可逆</strong> —— 每个副作用（服务、监听、悬浮窗、定时器）都能随开关关闭而撤销。</li>
+  </ul>
+</section>
+
+<section id="blog">
+  <h2>博客</h2>
+  <ul class="postlist">
+    
+      <li>
+        <a href="/2026/10/29/hello-seagull/">海鸥桌面官网上线</a>
+        <time>2026-10-29</time>
+      </li>
+    
+  </ul>
+</section>
+
+  </main>
+  <footer class="foot">
+    <p>海鸥桌面 · SeagullLauncher — 仅供学习交流，请勿用于商业用途</p>
+    <p><a href="/download/">下载</a> · 基于 GitHub Pages</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>关于 · 海鸥桌面</title>
+  <meta name="description" content="海鸥桌面（SeagullLauncher）—— 安卓车机桌面启动器：高德画中画、导航信息卡、悬浮球自愈">
+  <link rel="stylesheet" href="/css/style.css">
+<meta name="generator" content="Hexo 8.1.2"></head>
+<body>
+  <nav class="topnav">
+    <a class="brand" href="/">海鸥桌面</a>
+    <div class="links">
+      <a href="/#shots">截图</a>
+      <a href="/#features">功能</a>
+      <a href="/download/">下载</a>
+      <a href="/about/">关于</a>
+    </div>
+  </nav>
+  <main class="wrap">
+    <article class="doc">
+  <h1>关于</h1>
+  <h1 id="海鸥桌面（SeagullLauncher）"><a href="#海鸥桌面（SeagullLauncher）" class="headerlink" title="海鸥桌面（SeagullLauncher）"></a>海鸥桌面（SeagullLauncher）</h1><p>一款面向安卓车机的多窗口桌面。对标海鸥桌面（<code>cn.wayecai.launcher</code> v1.7.3）的功能结构，<strong>去掉账号、会员与云端体系</strong>，做成一个装上就能用的普通桌面。</p>
+<h2 id="它解决什么问题"><a href="#它解决什么问题" class="headerlink" title="它解决什么问题"></a>它解决什么问题</h2><p>开车时真正要看的只有几样：路怎么走、歌是什么、几点了。海鸥桌面把导航、音乐、时钟、车况钉在同一块屏幕上，其余的都收进抽屉。</p>
+<h2 id="核心能力"><a href="#核心能力" class="headerlink" title="核心能力"></a>核心能力</h2><ul>
+<li><strong>画中画与多窗口</strong>：L2 系统画中画（标准 PiP，无 root 可用）；L3 虚拟屏（MediaProjection 建私有虚拟屏 + root 搬运第三方应用 + 触摸注入）</li>
+<li><strong>导航信息卡</strong>：读取高德导航状态，转向 &#x2F; 距离 &#x2F; 到达时间实时上桌面，支持回家 &#x2F; 公司一键导航并自动落画中画</li>
+<li><strong>杀后台自愈</strong>：后台被清理后回桌面自动拉活并重搬画中画；悬浮球长按手动自愈菜单</li>
+<li><strong>桌面定制</strong>：14 套主题、日夜切换、全局字号、Dock 栏 &#x2F; 快捷栏 &#x2F; 菜园、动态壁纸、海鸥岛、拼音搜索、小白点悬浮球</li>
+<li><strong>天气与歌词</strong>：Open-Meteo 天气卡片；媒体会话歌词三来源匹配 + 底栏音乐条</li>
+<li><strong>系统增强层</strong>（root 可选）：触摸跨屏转发、任务搬运、亮度音量、Wi-Fi &#x2F; 蓝牙 &#x2F; 飞行模式、强停清缓存、CPU &#x2F; 温度 &#x2F; 内存、OBD-II 车况引擎</li>
+</ul>
+<h2 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h2><ol>
+<li><strong>公开优先</strong> —— 核心功能只用标准公开 API；特权能力「有则增强，无则隐藏」</li>
+<li><strong>单一事实源</strong> —— 所有配置收在一处（<code>LauncherModel</code>），UI 只读写这一处</li>
+<li><strong>无账号</strong> —— 不登录、不会员、不上云，备份恢复只走本地文件</li>
+<li><strong>可逆</strong> —— 每个副作用都能随开关关闭而撤销</li>
+</ol>
+<h2 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h2><ul>
+<li>包名 <code>com.seagull.carlauncher</code>，最低 Android 10（API 29），targetSdk 33</li>
+<li>纯命令行构建（无 Gradle）：aapt2 → javac → d8 → apksigner</li>
+<li>仅供学习交流，请勿用于商业用途</li>
+</ul>
+
+</article>
+
+  </main>
+  <footer class="foot">
+    <p>海鸥桌面 · SeagullLauncher — 仅供学习交流，请勿用于商业用途</p>
+    <p><a href="/download/">下载</a> · 基于 GitHub Pages</p>
+  </footer>
+</body>
+</html>
